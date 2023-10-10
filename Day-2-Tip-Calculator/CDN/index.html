@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <h1>Tip Calculator with Vue.js (CDN)</h1>
+        <input
+          type="number"
+          name="headCount"
+          id="heads"
+          placeholder="How many people?"
+          v-model="heads"
+        />
+        <input
+          type="number"
+          name="bill"
+          id="bill"
+          placeholder="Bill"
+          v-model="bill"
+        />
+        <input
+          type="number"
+          name="tipPercentage"
+          id="tipPercentage"
+          placeholder="Tip percentage"
+          v-model="tip"
+        />
+        <div id="result">Total price after tip added: ${{calculateResult}}</div>
+        <div id="perHead">Each person must pay: ${{calculatePerHead}}</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

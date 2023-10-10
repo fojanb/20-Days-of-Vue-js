@@ -1,0 +1,33 @@
+:root {
+  --bg-color-body: #415869;
+  --bg-color-wrapper: antiquewhite;
+  --ft-color-white: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Google Sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body {
+  background-color: var(--bg-color-body);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  width: 40%;
+}
+.wrapper input {
+  margin: 20px;
+  padding: 15px;
+  border: none;
+  background-color: var(--bg-color-wrapper);
+  outline: none;
+}
+.wrapper #result,
+.wrapper #perHead {
+  color: var(--ft-color-white);
+  font-weight: bolder;
+}
