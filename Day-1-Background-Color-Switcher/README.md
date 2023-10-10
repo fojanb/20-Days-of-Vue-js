@@ -1,4 +1,5 @@
 This mini app has been coded in Option API mode via CDN and CLI approaches.
+
 Option API 
   - via CDN (<script  src="https://unpkg.com/vue@3/dist/vue.global.js"></script>) --> Prefered for development environment
                      
